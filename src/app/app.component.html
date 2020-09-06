@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ configArray._title }}!
+  </h1>
+</div>
+<!-- http-server dist/universalConfig -->
+<table *ngIf="postsArray" style="width:1000px">
+  <tr>
+    <th style="width:200px">UserId : </th>
+    <td>User - {{postsArray.id}}</td>
+  </tr>
+  <tr>
+    <th>Title : </th>
+    <td>{{postsArray.title}}</td>
+  </tr>
+  <tr>
+    <th>Description : </th>
+    <td>
+      {{postsArray.body}}
+    </td>
+  </tr>
+</table>
